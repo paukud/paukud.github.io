@@ -77,7 +77,7 @@ body{
   transition: opacity 0.4s;
 }
 #portfolio-title{
-  font-size:28px;
+  font-size:280px;
   text-align: center;
   font-family: ErasLight, Verdana;
   font-weight: normal;
@@ -94,7 +94,7 @@ body{
 }
 .video-title{
   position: absolute;
-  font-size:180px;
+  font-size:18px;
   letter-spacing: 2px;
   color:white;
   font-family: ErasLight;
