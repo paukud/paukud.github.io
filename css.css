@@ -21,6 +21,10 @@ html{
 body{
   min-width:100%;
   min-height:100%;
+}
+#wrapper{
+  min-width:100%;
+  min-height:100%;
   overflow-x: hidden;
 }
 #menu{
