@@ -1,0 +1,235 @@
+@font-face {
+    font-family: ErasMedium;
+    src: url(ERASDEMI.TTF);
+}
+@font-face {
+    font-family: ErasLight;
+    src: url(ERASLGHT.TTF);
+}
+*{
+  margin:0;
+  padding:0;
+}
+#cover-video{
+  height:0px;
+  width:0px;
+}
+html{
+  min-width:100%;
+  min-height:100%;
+}
+body{
+  min-width:100%;
+  min-height:100%;
+  overflow-x: hidden;
+}
+#menu{
+  text-align: center;
+  padding-top:17px;
+  padding-bottom:17px;
+  position: fixed;
+  z-index:2;
+  background-color:white;
+  border-bottom:solid 2px rgba(192,192,192,0.1);
+  width:100%;
+}
+#menu li{
+  display: inline;
+  padding-right: 5%;
+  cursor:pointer;
+  font-family: ErasMedium;
+}
+#menu .last{
+  padding-right:0;  //removing right padding from the last menu 'li' element
+}
+#menu a{
+  text-decoration: none;
+}
+#portfolio{
+  font-size: 0;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+.thumbnails{
+  width:100%;
+  transition: opacity 0.2s;
+  -webkit-transform: translateZ(0); //removing thumbnails moves
+}
+.portfolio-child{
+  width:25%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.portfolio-child:hover .thumbnails{
+  opacity:0.5;
+  transition: opacity 0.4s;
+}
+#portfolio-title{
+  font-size:28px;
+  text-align: center;
+  font-family: ErasLight, Verdana;
+  font-weight: normal;
+  margin-bottom: 140px;
+  width:100%;
+}
+.vertical-line{
+  height:2px;
+  width:95px;
+  background-color: grey;
+  opacity: 0.9;
+  margin:0 auto;
+  margin-top:10px;
+}
+.video-title{
+  position: absolute;
+  font-size:18px;
+  letter-spacing: 2px;
+  color:white;
+  font-family: ErasLight;
+  text-transform: uppercase;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.video-year{
+  position: absolute;
+  font-size:12px;
+  color:white;
+  font-family: ErasLight;
+  top:90%;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.portfolio-child:hover{
+  background-color: red;
+  cursor:pointer;
+}
+.portfolio-child:hover .video-title{
+  opacity: 1;
+  top:10%;
+  transition: all 0.5s;
+}
+.portfolio-child:hover .video-year{
+  opacity: 1;
+  top:80%;
+  transition: all 0.5s;
+}
+.portfolio-child:hover .additional-info{
+  opacity: 1;
+  top:50%;
+  transition: all 0.5s;
+}
+.additional-info{
+  position: absolute;
+  color:white;
+  font-family: ErasLight;
+  font-size:12px;
+  left:50%;
+  transform: translateX(-50%);
+  top:70%;
+  opacity: 0;
+}
+iframe{
+  display: none;
+}
+.playing{
+  display: block;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#cover{
+  position: relative;
+}
+.arrow{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width:35px;
+  padding-left:3.5px;
+  padding-right:3.5px;
+  height:42px;
+  cursor:pointer;
+}
+.arrow:hover{
+  border:solid 1px white;
+  border-radius:50%;
+}
+#white-coverage{
+  width:100%;
+  background-color: white;
+  position: absolute;
+}
+#get-in-touch-space{
+  position: relative;
+  text-align: center;
+}
+#email,#phone-number{
+  display: inline-block;
+  color:white;
+  font-family: ErasLight, Verdana;
+  font-size: 18px;
+  width:240px;
+  text-align: center;
+  padding-bottom:40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#contact-info{
+  position: absolute;
+  top:57%;
+  left:50%;
+  transform: translateX(-50%);
+}
+#get-in-touch-space h2{
+  color:white;
+  font-size:40px;
+  font-family: ErasLight, Verdana;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+#get-in-touch-space .vertical-line{
+  background-color: white;
+  width:195px;
+  height:1px;
+}
+#contacts-title{
+  position: absolute;
+  top:60px;
+  left:50%;
+  transform: translateX(-50%);
+}
+#phone-number img, #email img{
+  height:30px;
+  padding-bottom:24px;
+}
+#social-media img{
+  width:54px;
+  opacity:0.5;
+}
+#social-media a{
+  padding-right:23px;
+  padding-left: 23px;
+  display: inline-block;
+}
+#social-media{
+  text-align:center;
+  margin-top:38px;
+  margin-bottom: 38px;
+}
+#copyrights{
+  text-align: center;
+}
+#copyrights p{
+  font-family: ErasLight, Verdana;
+  font-size:18px;
+  color:grey;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom:32px;
+}
