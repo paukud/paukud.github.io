@@ -101,7 +101,7 @@ function resizeCoverVideo(){
   }
   //------"cutting" the video vertically if size exceeds viewport height-----
   if (parseFloat(coverVideoHeight)>parseFloat(viewportHeight)){
-    const coverageHeight=(parseFloat(coverVideoHeight)-parseFloat(viewportHeight))+'px';
+    const coverageHeight=(parseFloat(coverVideoHeight)-parseFloat(viewportHeight)+3)+'px';
     whiteCoverage.style.top=viewportHeight;
     whiteCoverage.style.height=coverageHeight;
 
