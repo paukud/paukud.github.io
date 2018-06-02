@@ -16,7 +16,7 @@ const contacts=document.querySelector('#contacts');
 
 var i;  //helping variable
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+contactsVideo.play();
 //%%%%%%%%%%%%%%%%%%%%---MAIN FUNCTION--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 resizeContactsVideo();
 window.addEventListener('resize',resizeContactsVideo); //resizing contacts video when the user resizes window
